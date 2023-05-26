@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/judulFragment">
+
+    <fragment
+        android:id="@+id/judulFragment"
+        android:name="com.example.latihan7.JudulFragment"
+        android:label="fragment_judul"
+        tools:layout="@layout/fragment_judul" >
+        <action
+            android:id="@+id/action_judulFragment_to_identitasFragment"
+            app:destination="@id/identitasFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/identitasFragment"
+        android:name="com.example.latihan7.IdentitasFragment"
+        android:label="fragment_identitas"
+        tools:layout="@layout/fragment_identitas" />
+</navigation>
